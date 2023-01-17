@@ -1,0 +1,287 @@
+body{
+    position: relative;
+    width: 940px;
+    height: 950px;
+    background: #150125; 
+}
+
+.logo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50px;
+    right: 50px ;
+    display: block;
+    box-shadow: 0 0 10px #E32DEE, 0 0 20px #E32DEE, 0 0 40px #E32DEE;
+    
+        
+}
+
+.caja-incriptacion{
+    position: relative;
+    width: 360px;
+    height: 420px;
+}
+
+#mensaje{
+    position: absolute;
+    width: 600px;
+    height: 48px;
+    left: 240px;
+    top: 168px;  
+    resize:none;
+    background-color: #150125;
+    color: #2e0450;
+    padding: 1em;
+    font-family: 'heebo', sans-serif;    
+    font-size: 32px;
+    text-decoration-color: #2e0450;
+    size: 32px;
+    line-height: 150%;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    width: 300px;
+    height: 200px;
+    transition: all 0.2s;
+
+}
+
+#mensaje:hover {
+    cursor: pointer;
+    background-color:#150125;
+    box-shadow: 0 0 20px #E32DEE
+}
+
+#mensaje:focus {
+    cursor:text;
+    color: #5a5757;
+    background-color: #2e0450;
+    box-shadow: 0 0 20px #E32DEE
+}
+
+#boton1 {
+    position:absolute;
+    height: 67px;
+    width: 328px;
+    left: 180px;
+    top: 450px;
+    color: #5a5757;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 30px;
+    width: 228px;
+    height: 67px;
+    background: #150125;
+    border-color: #150125;
+    transition: 0.5s;
+    
+}
+
+#boton1:hover{
+    background: #E32DEE;
+    box-shadow: 0 0 10px #E32DEE, 0 0 40px #E32DEE, 0 0 80px #E32DEE;
+}
+
+#boton2{
+    position:absolute;
+    height: 67px;
+    width: 228px;
+    left: 420px;
+    top: 450px;
+    background: #150125;
+    padding: 24px;
+    font-size: 24px;
+    color: #5a5757;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 24px;
+    gap: 8px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#boton2:hover{
+    background: #E32DEE;
+    box-shadow: 0 0 10px #E32DEE, 0 0 40px #E32DEE, 0 0 80px #E32DEE;
+}
+
+.mensaje-encriptado{
+    position: absolute;
+    width: 400px;
+    display:flex;
+    font-size: 25px;
+    font-family: 'heebo', sans-serif;
+    text-align:justify;    
+    color:#5a5757;
+    size: 32px;
+    height: 550px;
+    left: 850px;
+    top: 2px;
+    resize:none;
+    padding: 16px 30px 200px 30px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* shadow */
+
+    box-shadow: 0 0 10px #E32DEE, 0 0 40px #E32DEE, 0 0 80px #E32DEE;
+    border-radius: 5px;
+}
+
+#ocultar{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 336px;
+    height: 426px;
+    margin: auto;
+    display: flex;
+}    
+
+img{
+    position: absolute;
+    width: 336px;
+    height: auto;
+    left: 850px;
+    top: 15px;
+    margin: 1em;
+    display: block;
+    max-width: 100%;
+}
+
+.leyenda1{
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 895px;
+    top: 350px; 
+    text-align:center;
+    font-size: 1.2em;
+    color: #0A3871;   
+    align-items:center;
+    line-height:1.5em;
+    display: block; 
+    padding: 0px;
+    gap: 16px;
+    font-weight: bold;
+}
+
+.leyenda2{
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 895px;
+    top: 420px; 
+    text-align:center;
+    font-size: 1.2em;
+    color: #0A3871;   
+    align-items:center;
+    line-height:1.5em;
+    display: block; 
+    padding: 0px;
+    gap: 16px;
+    font-weight: bold;
+}
+
+
+#copiar{
+    position:absolute;
+    height: 67px;
+    width: 328px;
+    left: 290px;
+    top: 520px;
+    color: #5a5757;
+    font-size: 24px;
+    padding: 10px;
+    width: 228px;
+    height: 67px;
+    background: #150125;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+      
+}
+
+#copiar:hover{
+    background: #E32DEE;
+    box-shadow: 0 0 10px #E32DEE, 0 0 20px #E32DEE, 0 0 40px #E32DEE;
+}
+       
+@media screen and (max-width:480px) {
+     
+    .logo{
+        width: auto;
+        left: 16px;
+        top: 60px;
+    }
+    #mensaje{
+        
+        width: auto;
+        height: 200px;
+        left: auto;
+        top: 140px;
+    }
+
+    #boton1{       
+    height: 67px;
+    width: auto;
+    left: 20px;
+    top: 420px;
+    border-radius: 24px;
+    padding: 24px;   
+  
+   }
+
+   #copiar{     
+    height: 67px;
+    width: auto;
+    left: 20px;
+    top: 500px;
+    border-radius: 24px;
+    padding: 24px;
+
+   }
+   #boton2{       
+    height: 67px;
+    width: auto;
+    left: 20px;
+    top: 580px;
+    border-radius: 24px;
+    padding: 24px;
+    
+   }
+
+   .mensaje-encriptado, img{
+    
+    width:auto;
+    height: 200px;
+    left: auto;
+    top: 800px;
+   }
+
+   .leyenda1{    
+    width: auto;
+    left: 16px;
+    top: 680px;
+    display: none;
+   }
+
+   .leyenda2{
+   
+    width: auto;
+    height: 200px;
+    left: 16px;
+    top: 680px;
+    color: #5a5757;
+   }
+    
+}    
+
+
+
